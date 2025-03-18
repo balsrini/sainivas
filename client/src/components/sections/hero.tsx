@@ -17,14 +17,14 @@ export default function Hero() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Experience Luxury Living at Its Finest
+            Premium Service Apartments for Extended Stay
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8">
-            Discover our premium serviced apartments in the heart of the city.
-            Elegance meets comfort in every detail.
+            Experience luxurious living in our fully furnished service apartments.
+            Perfect for those seeking a sophisticated home away from home.
           </p>
           <Button size="lg" onClick={scrollToContact}>
-            Book Your Stay
+            Make an Inquiry
           </Button>
         </div>
       </div>
