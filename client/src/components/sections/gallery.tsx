@@ -12,28 +12,36 @@ import { Button } from "@/components/ui/button";
 
 const images = [
   {
-    url: "https://images.unsplash.com/photo-1489269637500-aa0e75768394",
-    alt: "Living Room"
+    url: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab",
+    alt: "SaiNivas Building Exterior"
   },
   {
-    url: "https://images.unsplash.com/photo-1713832139686-42a1d84ad763",
-    alt: "Bedroom"
+    url: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00",
+    alt: "Main Entrance & Lobby"
   },
   {
-    url: "https://images.unsplash.com/photo-1713832140683-127683601a67",
-    alt: "Kitchen"
+    url: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf",
+    alt: "Swimming Pool & Recreation Area"
   },
   {
-    url: "https://images.unsplash.com/photo-1713832139677-7fefa9ee3df0",
-    alt: "Bathroom"
+    url: "https://images.unsplash.com/photo-1571939228382-b2f2b585ce15",
+    alt: "Fitness Center"
   },
   {
-    url: "https://images.unsplash.com/photo-1713832139677-a03a41b602e3",
-    alt: "Dining Area"
+    url: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2",
+    alt: "Rooftop Garden & Terrace"
   },
   {
-    url: "https://images.unsplash.com/photo-1713832139688-79676097edde",
-    alt: "Study"
+    url: "https://images.unsplash.com/photo-1551632811-561732d1e306",
+    alt: "Community Lounge"
+  },
+  {
+    url: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136",
+    alt: "Parking & Security"
+  },
+  {
+    url: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64",
+    alt: "Building Courtyard"
   }
 ];
 
@@ -62,9 +70,15 @@ export default function Gallery() {
   return (
     <section id="gallery" className="py-20 bg-muted">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12 text-center">
-          Gallery
-        </h2>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold mb-4">
+            SaiNivas Building Gallery
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Explore our premium apartment building featuring world-class amenities, 
+            elegant architecture, and beautiful common spaces designed for modern living.
+          </p>
+        </div>
         <Carousel className="w-full max-w-5xl mx-auto">
           <CarouselContent>
             {images.map((image, index) => (
