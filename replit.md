@@ -10,6 +10,9 @@ A comprehensive apartment listing website featuring 9 premium apartments with in
   - Created 9 sample apartments with unique images and features
   - Built apartment listing grid with individual galleries
   - Updated hero section to reflect apartment listing theme
+  - Created individual apartment detail pages with full galleries
+  - Fixed apartment grid layout to display exactly 3 apartments per row
+  - Changed project name from "Luxury Serviced Apartments" to "SaiNivas"
 
 ## Project Architecture
 

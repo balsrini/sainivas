@@ -81,7 +81,7 @@ export default function FlatsListing() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {flats?.map((flat) => (
             <Card key={flat.id} className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer group">
               <div className="h-48" onClick={() => handleViewApartment(flat.id)}>
