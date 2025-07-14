@@ -29,9 +29,9 @@ export class MemStorage implements IStorage {
         bathrooms: 1,
         area: "450 sq ft",
         images: [
-          "https://images.unsplash.com/photo-1489269637500-aa0e75768394",
-          "https://images.unsplash.com/photo-1713832139686-42a1d84ad763",
-          "https://images.unsplash.com/photo-1713832140683-127683601a67"
+          "/images/apt1-img1.jpg",
+          "/images/apt1-img2.jpg",
+          "/images/apt1-img3.jpg"
         ],
         features: ["City Views", "Furnished", "Air Conditioning", "High-Speed Internet"]
       },
@@ -44,9 +44,9 @@ export class MemStorage implements IStorage {
         bathrooms: 1,
         area: "650 sq ft",
         images: [
-          "https://images.unsplash.com/photo-1713832139677-7fefa9ee3df0",
-          "https://images.unsplash.com/photo-1713832139677-a03a41b602e3",
-          "https://images.unsplash.com/photo-1713832139688-79676097edde"
+          "/images/apt2-img1.jpg",
+          "/images/apt2-img2.jpg",
+          "/images/apt2-img3.jpg"
         ],
         features: ["Luxury Finishes", "In-Unit Laundry", "Balcony", "Gym Access"]
       },
@@ -59,9 +59,9 @@ export class MemStorage implements IStorage {
         bathrooms: 2,
         area: "900 sq ft",
         images: [
-          "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2",
-          "https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e",
-          "https://images.unsplash.com/photo-1586023492125-27b2c045efd7"
+          "/images/apt3-img1.jpg",
+          "/images/apt3-img2.jpg",
+          "/images/apt3-img3.jpg"
         ],
         features: ["Master Suite", "Walk-in Closet", "Modern Kitchen", "City Views"]
       },
@@ -74,9 +74,9 @@ export class MemStorage implements IStorage {
         bathrooms: 2,
         area: "1,200 sq ft",
         images: [
-          "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688",
-          "https://images.unsplash.com/photo-1560185127-6ed189bf02f4",
-          "https://images.unsplash.com/photo-1564078516393-cf04bd966897"
+          "/images/apt4-img1.jpg",
+          "/images/apt4-img2.jpg",
+          "/images/apt4-img3.jpg"
         ],
         features: ["Panoramic Views", "Private Terrace", "Concierge Service", "Premium Location"]
       },
@@ -89,9 +89,9 @@ export class MemStorage implements IStorage {
         bathrooms: 1,
         area: "700 sq ft",
         images: [
-          "https://images.unsplash.com/photo-1554995207-c18c203602cb",
-          "https://images.unsplash.com/photo-1558618666-fcd25c85cd64",
-          "https://images.unsplash.com/photo-1616137466211-f939a420be84"
+          "/images/apt5-img1.jpg",
+          "/images/apt5-img2.jpg",
+          "/images/apt5-img3.jpg"
         ],
         features: ["High Ceilings", "Exposed Brick", "Hardwood Floors", "Artist District"]
       },
@@ -104,9 +104,9 @@ export class MemStorage implements IStorage {
         bathrooms: 1,
         area: "400 sq ft",
         images: [
-          "https://images.unsplash.com/photo-1484154218962-a197022b5858",
-          "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af",
-          "https://images.unsplash.com/photo-1493809842364-78817add7ffb"
+          "/images/apt6-img1.jpg",
+          "/images/apt6-img2.jpg",
+          "/images/apt6-img3.jpg"
         ],
         features: ["Garden Views", "Quiet Location", "Natural Light", "Pet Friendly"]
       },
@@ -119,9 +119,9 @@ export class MemStorage implements IStorage {
         bathrooms: 1,
         area: "850 sq ft",
         images: [
-          "https://images.unsplash.com/photo-1512917774080-9991f1c4c750",
-          "https://images.unsplash.com/photo-1565538810643-b5bdb714032a",
-          "https://images.unsplash.com/photo-1574362848149-11496d93a7c7"
+          "/images/apt7-img1.jpg",
+          "/images/apt7-img2.jpg",
+          "/images/apt7-img3.jpg"
         ],
         features: ["Central Location", "Modern Appliances", "Storage Space", "Transit Access"]
       },
@@ -134,9 +134,9 @@ export class MemStorage implements IStorage {
         bathrooms: 2,
         area: "950 sq ft",
         images: [
-          "https://images.unsplash.com/photo-1560185009-5bf9f2849488",
-          "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136",
-          "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d"
+          "/images/apt8-img1.jpg",
+          "/images/apt8-img2.jpg",
+          "/images/apt8-img3.jpg"
         ],
         features: ["Water Views", "Premium Finishes", "Marina Access", "Resort-Style Living"]
       },
@@ -149,9 +149,9 @@ export class MemStorage implements IStorage {
         bathrooms: 2,
         area: "1,100 sq ft",
         images: [
-          "https://images.unsplash.com/photo-1571939228382-b2f2b585ce15",
-          "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92",
-          "https://images.unsplash.com/photo-1586105251261-72a756497a11"
+          "/images/apt9-img1.jpg",
+          "/images/apt9-img2.jpg",
+          "/images/apt9-img3.jpg"
         ],
         features: ["Family Friendly", "Near Schools", "Play Area", "Safe Neighborhood"]
       }

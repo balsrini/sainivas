@@ -12,35 +12,35 @@ import { Button } from "@/components/ui/button";
 
 const images = [
   {
-    url: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab",
+    url: "/images/building-exterior.jpg",
     alt: "SaiNivas Building Exterior"
   },
   {
-    url: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00",
+    url: "/images/main-entrance-lobby.jpg",
     alt: "Main Entrance & Lobby"
   },
   {
-    url: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf",
+    url: "/images/swimming-pool.jpg",
     alt: "Swimming Pool & Recreation Area"
   },
   {
-    url: "https://images.unsplash.com/photo-1571939228382-b2f2b585ce15",
+    url: "/images/fitness-center.jpg",
     alt: "Fitness Center"
   },
   {
-    url: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2",
+    url: "/images/rooftop-garden.jpg",
     alt: "Rooftop Garden & Terrace"
   },
   {
-    url: "https://images.unsplash.com/photo-1551632811-561732d1e306",
+    url: "/images/community-lounge.jpg",
     alt: "Community Lounge"
   },
   {
-    url: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136",
+    url: "/images/parking-security.jpg",
     alt: "Parking & Security"
   },
   {
-    url: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64",
+    url: "/images/building-courtyard.jpg",
     alt: "Building Courtyard"
   }
 ];

@@ -13,6 +13,9 @@ A comprehensive apartment listing website featuring 9 premium apartments with in
   - Created individual apartment detail pages with full galleries
   - Fixed apartment grid layout to display exactly 3 apartments per row
   - Changed project name from "Luxury Serviced Apartments" to "SaiNivas"
+  - Added Park Avenue Std Standard font for SaiNivas branding
+  - Created local images folder and downloaded all images (33 total files, ~3.4MB)
+  - Updated all image references to use local files instead of external URLs
 
 ## Project Architecture
 

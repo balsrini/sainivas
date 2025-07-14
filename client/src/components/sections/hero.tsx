@@ -9,7 +9,7 @@ export default function Hero() {
     <section className="pt-16 min-h-screen relative flex items-center">
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1489269637500-aa0e75768394"
+          src="/images/hero-apartment.jpg"
           alt="Luxury Apartment Interior"
           className="w-full h-full object-cover opacity-20"
         />
