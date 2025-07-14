@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
+import { useLocation } from "wouter";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -7,9 +8,14 @@ import { Bed, Bath, Square, MapPin } from "lucide-react";
 import type { Flat } from "@shared/schema";
 
 export default function FlatsListing() {
+  const [, setLocation] = useLocation();
   const { data: flats, isLoading, error } = useQuery<Flat[]>({
     queryKey: ["/api/flats"],
   });
+
+  const handleViewApartment = (flatId: number) => {
+    setLocation(`/apartment/${flatId}`);
+  };
 
   const handleInquire = (flatId: number, flatTitle: string) => {
     // Scroll to contact form and pre-fill with flat information
@@ -77,14 +83,14 @@ export default function FlatsListing() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {flats?.map((flat) => (
-            <Card key={flat.id} className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="h-48">
+            <Card key={flat.id} className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer group">
+              <div className="h-48" onClick={() => handleViewApartment(flat.id)}>
                 <FlatGallery images={flat.images} title={flat.title} />
               </div>
               
-              <CardHeader>
+              <CardHeader onClick={() => handleViewApartment(flat.id)}>
                 <div className="flex justify-between items-start">
-                  <CardTitle className="text-xl">{flat.title}</CardTitle>
+                  <CardTitle className="text-xl group-hover:text-primary transition-colors">{flat.title}</CardTitle>
                   <Badge variant="secondary" className="text-lg font-semibold">
                     {flat.price}
                   </Badge>
@@ -94,7 +100,7 @@ export default function FlatsListing() {
                 </CardDescription>
               </CardHeader>
               
-              <CardContent className="space-y-4">
+              <CardContent className="space-y-4" onClick={() => handleViewApartment(flat.id)}>
                 <div className="flex items-center justify-between text-sm text-muted-foreground">
                   <div className="flex items-center gap-1">
                     <Bed className="h-4 w-4" />
@@ -124,9 +130,22 @@ export default function FlatsListing() {
                 </div>
               </CardContent>
               
-              <CardFooter>
+              <CardFooter className="space-y-2">
                 <Button 
-                  onClick={() => handleInquire(flat.id, flat.title)}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleViewApartment(flat.id);
+                  }}
+                  variant="outline"
+                  className="w-full"
+                >
+                  View Gallery & Details
+                </Button>
+                <Button 
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleInquire(flat.id, flat.title);
+                  }}
                   className="w-full"
                 >
                   Inquire About This Apartment
