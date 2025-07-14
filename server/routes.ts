@@ -5,6 +5,29 @@ import { insertEnquirySchema } from "@shared/schema";
 import { ZodError } from "zod";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  app.get("/api/flats", async (req, res) => {
+    try {
+      const flats = await storage.getFlats();
+      res.json(flats);
+    } catch (error) {
+      res.status(500).json({ message: "Failed to get flats" });
+    }
+  });
+
+  app.get("/api/flats/:id", async (req, res) => {
+    try {
+      const id = parseInt(req.params.id);
+      const flat = await storage.getFlatById(id);
+      if (!flat) {
+        res.status(404).json({ message: "Flat not found" });
+        return;
+      }
+      res.json(flat);
+    } catch (error) {
+      res.status(500).json({ message: "Failed to get flat" });
+    }
+  });
+
   app.post("/api/enquiries", async (req, res) => {
     try {
       const enquiryData = insertEnquirySchema.parse(req.body);
