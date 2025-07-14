@@ -130,7 +130,7 @@ export default function FlatsListing() {
                 </div>
               </CardContent>
               
-              <CardFooter className="space-y-2">
+              <CardFooter className="flex flex-col space-y-2 p-6">
                 <Button 
                   onClick={(e) => {
                     e.stopPropagation();
