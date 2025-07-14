@@ -8,7 +8,7 @@ export default function NavHeader() {
   return (
     <header className="fixed top-0 w-full bg-background/80 backdrop-blur-sm z-50 border-b">
       <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <h1 className="text-xl font-bold" style={{ fontFamily: 'Playfair Display, serif' }}>SaiNivas</h1>
+        <h1 className="text-xl font-bold park-avenue-font" style={{ fontFamily: 'Park Avenue Std Standard, Park Avenue Std, cursive', fontSize: '1.5rem' }}>SaiNivas</h1>
         <div className="hidden md:flex gap-6">
           <Button variant="ghost" onClick={() => scrollToSection("gallery")}>Gallery</Button>
           <Button variant="ghost" onClick={() => scrollToSection("flats-listing")}>Apartments</Button>

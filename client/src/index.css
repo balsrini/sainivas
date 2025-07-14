@@ -1,6 +1,13 @@
+@import url('/fonts/park-avenue-std.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom font classes */
+.park-avenue-font {
+  font-family: 'Park Avenue Std Standard', 'Park Avenue Std', cursive !important;
+}
 
 @layer base {
   * {

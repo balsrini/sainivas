@@ -1,0 +1,24 @@
+/* Park Avenue Std Standard Font */
+@font-face {
+  font-family: 'Park Avenue Std Standard';
+  src: url('./ParkAvenueStd.otf') format('opentype'),
+       url('https://files.blogfonts.com/p/187/136187/ParkAvenueStd.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Alternative name for compatibility */
+@font-face {
+  font-family: 'Park Avenue Std';
+  src: url('./ParkAvenueStd.otf') format('opentype'),
+       url('https://files.blogfonts.com/p/187/136187/ParkAvenueStd.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Ensure font is loaded for SaiNivas branding */
+.park-avenue-font {
+  font-family: 'Park Avenue Std Standard', 'Park Avenue Std', cursive;
+}
