@@ -34,7 +34,7 @@ This project is configured for easy deployment to GitHub Pages:
    git push origin main
    ```
 
-4. **Automatic Deployment**: The GitHub Action will automatically build and deploy your site
+4. **Automatic Deployment**: The GitHub Action will automatically build and deploy your site using the latest artifact actions
 
 5. **Access your site**: Your site will be available at:
    ```
@@ -114,10 +114,16 @@ export const staticFlats = [
 
 The project includes:
 
-- **GitHub Actions Workflow**: `.github/workflows/deploy.yml`
+- **GitHub Actions Workflow**: `.github/workflows/deploy.yml` (using latest artifact actions v4/v3)
+- **Alternative Simple Workflow**: `.github/workflows/deploy-simple.yml` (using peaceiris/actions-gh-pages)
 - **Static Build Configuration**: `vite.config.static.ts`
 - **Static Data**: `client/src/data/static-data.ts`
 - **Build Script**: `build-static.js`
+
+### Deployment Options:
+
+1. **Primary**: Uses the standard GitHub Pages deployment with latest artifact actions
+2. **Alternative**: Uses peaceiris/actions-gh-pages for simpler deployment (rename to deploy.yml if needed)
 
 ## Support
 

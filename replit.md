@@ -22,6 +22,7 @@ A comprehensive apartment listing website featuring 9 premium apartments with in
   - Created static build configuration and deployment scripts
   - Updated frontend to work without backend API calls
   - Added comprehensive deployment documentation
+  - Updated GitHub Actions to use latest artifact actions (v4/v3) instead of deprecated v3/v2
 
 ## Project Architecture
 
