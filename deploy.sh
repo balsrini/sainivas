@@ -5,9 +5,9 @@ echo "🚀 Building SaiNivas for GitHub Pages deployment..."
 # Clean previous build
 rm -rf dist
 
-# Build static version using the static config
-echo "📦 Building with static configuration..."
-npx vite build --config vite.config.static.ts
+# Build static version using the GitHub config
+echo "📦 Building with GitHub Pages configuration..."
+npx vite build --config vite.config.github.ts
 
 # Check if build was successful
 if [ $? -eq 0 ]; then

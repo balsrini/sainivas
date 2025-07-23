@@ -7,6 +7,16 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+// Get repository name from environment or use default
+const getBasePath = () => {
+  if (process.env.GITHUB_REPOSITORY) {
+    const repoName = process.env.GITHUB_REPOSITORY.split('/')[1];
+    return `/${repoName}/`;
+  }
+  // Default fallback - change this to match your repo name
+  return "/sainivas/";
+};
+
 export default defineConfig({
   plugins: [
     react(),
@@ -23,5 +33,5 @@ export default defineConfig({
     outDir: path.resolve(__dirname, "dist"),
     emptyOutDir: true,
   },
-  base: process.env.GITHUB_REPOSITORY ? `/${process.env.GITHUB_REPOSITORY.split('/')[1]}/` : "/",
+  base: getBasePath(),
 });

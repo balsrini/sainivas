@@ -125,12 +125,32 @@ The project includes:
 1. **Primary**: Uses the standard GitHub Pages deployment with latest artifact actions
 2. **Alternative**: Uses peaceiris/actions-gh-pages for simpler deployment (rename to deploy.yml if needed)
 
+## Troubleshooting
+
+If you encounter issues:
+
+### 404 Page Not Found
+1. **Check repository name**: The URL should match `https://username.github.io/your-repo-name/`
+2. **Verify base path**: The build automatically detects your repo name
+3. **Enable GitHub Pages**: Go to Settings → Pages → Source: "GitHub Actions"
+
+### Images Not Loading
+- Images are stored in `client/public/images/` and accessible at `/images/`
+- Check that all 33 image files are included in your repository
+
+### Build Failures
+- Review GitHub Actions logs for specific errors
+- Ensure Node.js 20 is being used
+- All dependencies should install correctly
+
+**📋 Complete troubleshooting guide**: See `GITHUB_PAGES_TROUBLESHOOTING.md`
+
 ## Support
 
 For issues or questions:
-1. Check the GitHub repository issues
+1. Check `GITHUB_PAGES_TROUBLESHOOTING.md` for common solutions
 2. Review the deployment logs in GitHub Actions
-3. Ensure all image paths use `/images/` prefix for GitHub Pages compatibility
+3. Test the build locally: `npx vite build --config vite.config.github.ts`
 
 ## License
 
