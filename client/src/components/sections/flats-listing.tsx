@@ -1,17 +1,17 @@
-import { useQuery } from "@tanstack/react-query";
 import { useLocation } from "wouter";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import FlatGallery from "@/components/ui/flat-gallery";
 import { Bed, Bath, Square, MapPin } from "lucide-react";
+import { staticFlats } from "@/data/static-data";
 import type { Flat } from "@shared/schema";
 
 export default function FlatsListing() {
   const [, setLocation] = useLocation();
-  const { data: flats, isLoading, error } = useQuery<Flat[]>({
-    queryKey: ["/api/flats"],
-  });
+  const flats = staticFlats;
+  const isLoading = false;
+  const error = null;
 
   const handleViewApartment = (flatId: number) => {
     setLocation(`/apartment/${flatId}`);

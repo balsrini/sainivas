@@ -16,6 +16,12 @@ A comprehensive apartment listing website featuring 9 premium apartments with in
   - Added Park Avenue Std Standard font for SaiNivas branding
   - Created local images folder and downloaded all images (33 total files, ~3.4MB)
   - Updated all image references to use local files instead of external URLs
+- **July 23, 2025**: Configured project for GitHub Pages deployment
+  - Created static data file for client-side rendering
+  - Added GitHub Actions workflow for automatic deployment
+  - Created static build configuration and deployment scripts
+  - Updated frontend to work without backend API calls
+  - Added comprehensive deployment documentation
 
 ## Project Architecture
 

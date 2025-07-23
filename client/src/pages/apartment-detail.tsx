@@ -1,27 +1,20 @@
 import { useParams, useLocation } from "wouter";
-import { useQuery } from "@tanstack/react-query";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import FlatGallery from "@/components/ui/flat-gallery";
 import NavHeader from "@/components/nav-header";
 import { ArrowLeft, Bed, Bath, Square, MapPin } from "lucide-react";
+import { staticFlats } from "@/data/static-data";
 import type { Flat } from "@shared/schema";
 
 export default function ApartmentDetail() {
   const { id } = useParams<{ id: string }>();
   const [, setLocation] = useLocation();
   
-  const { data: flat, isLoading, error } = useQuery<Flat>({
-    queryKey: ["/api/flats", id],
-    queryFn: async () => {
-      const response = await fetch(`/api/flats/${id}`);
-      if (!response.ok) {
-        throw new Error('Apartment not found');
-      }
-      return response.json();
-    },
-  });
+  const flat = staticFlats.find(f => f.id === parseInt(id || '0'));
+  const isLoading = false;
+  const error = !flat;
 
   const handleInquire = () => {
     setLocation("/#contact");
