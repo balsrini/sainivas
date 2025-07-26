@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaiNivas - Premium Apartments</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./fonts/park-avenue-std.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/apt1-img1.jpg">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="nav-header">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1 class="brand-title">SaiNivas</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#flats" class="nav-link">Apartments</a>
+                <a href="#amenities" class="nav-link">Amenities</a>
+                <a href="#location" class="nav-link">Location</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-mobile-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Discover Your Perfect Urban Sanctuary</h1>
+                <p class="hero-description">
+                    Explore our curated collection of premium apartments, each thoughtfully designed 
+                    for modern urban living. From cozy studios to spacious family homes, find your 
+                    ideal space in the heart of the city.
+                </p>
+                <div class="hero-actions">
+                    <a href="#flats" class="btn-primary">Browse Apartments</a>
+                    <a href="#contact" class="btn-secondary">Schedule Visit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flats Listing Section -->
+    <section id="flats" class="flats-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Premium Apartments</h2>
+                <p class="section-description">
+                    Discover our collection of thoughtfully designed apartments, each offering unique features and modern amenities.
+                </p>
+            </div>
+            <div class="flats-grid" id="flatsGrid">
+                <!-- Apartments will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="amenities-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Premium Amenities</h2>
+                <p class="section-description">
+                    Experience luxury living with our comprehensive range of world-class amenities designed for your comfort and convenience.
+                </p>
+            </div>
+            <div class="amenities-grid">
+                <div class="amenity-card">
+                    <div class="amenity-icon">🏊‍♀️</div>
+                    <h3 class="amenity-title">Swimming Pool</h3>
+                    <p class="amenity-description">Infinity pool with city views and poolside lounge area</p>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-icon">💪</div>
+                    <h3 class="amenity-title">Fitness Center</h3>
+                    <p class="amenity-description">State-of-the-art gym with modern equipment and personal training</p>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-icon">🚗</div>
+                    <h3 class="amenity-title">Parking</h3>
+                    <p class="amenity-description">Secure underground parking with 24/7 access</p>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-icon">🛡️</div>
+                    <h3 class="amenity-title">Security</h3>
+                    <p class="amenity-description">24/7 security with CCTV surveillance and access control</p>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-icon">🌿</div>
+                    <h3 class="amenity-title">Garden</h3>
+                    <p class="amenity-description">Landscaped gardens and outdoor recreation areas</p>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-icon">📶</div>
+                    <h3 class="amenity-title">High-Speed WiFi</h3>
+                    <p class="amenity-description">Complimentary high-speed internet throughout the building</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Prime Location</h2>
+                <p class="section-description">
+                    Strategically located in the heart of the city with easy access to business districts, shopping, and entertainment.
+                </p>
+            </div>
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="location-item">
+                        <h3 class="location-title">📍 Address</h3>
+                        <p class="location-description">123 Premium Avenue, City Center, Metropolitan Area</p>
+                    </div>
+                    <div class="location-item">
+                        <h3 class="location-title">🚇 Transportation</h3>
+                        <p class="location-description">2 minutes walk to Metro Station, Major bus routes, Easy highway access</p>
+                    </div>
+                    <div class="location-item">
+                        <h3 class="location-title">🏪 Nearby</h3>
+                        <p class="location-description">Shopping malls, Restaurants, Schools, Hospitals, Parks within 1km radius</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">
+                    Ready to find your perfect apartment? Contact us today to schedule a viewing or get more information.
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3 class="contact-title">📞 Phone</h3>
+                        <p class="contact-description">+1 (555) 123-4567</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3 class="contact-title">📧 Email</h3>
+                        <p class="contact-description">info@sainivas.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3 class="contact-title">🕒 Office Hours</h3>
+                        <p class="contact-description">Mon-Sat: 9AM-7PM<br>Sunday: 10AM-5PM</p>
+                    </div>
+                </div>
+                <form class="contact-form" onsubmit="handleContactForm(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="apartment">Interested Apartment</label>
+                        <select id="apartment" name="apartment">
+                            <option value="">Select an apartment</option>
+                            <!-- Options will be populated by JavaScript -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div id="galleryModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeGallery()">&times;</span>
+            <div class="gallery-container">
+                <div class="gallery-main">
+                    <img id="galleryMainImage" src="" alt="">
+                    <button class="gallery-nav gallery-prev" onclick="prevImage()">‹</button>
+                    <button class="gallery-nav gallery-next" onclick="nextImage()">›</button>
+                </div>
+                <div class="gallery-thumbnails" id="galleryThumbnails">
+                    <!-- Thumbnails will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./data.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
